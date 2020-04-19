@@ -1,0 +1,15 @@
+<h3>No Implicit Any</h3>
+
+<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+  <div *ngIf="showResult">
+    <div>
+      <h2>Sum: {{ sum }}</h2>
+    </div>
+
+    <div class="alert">
+      <p>Cost (The time it takes to discover the error):</p>
+
+      <h3>Compile => Build => Run => Inspect</h3>
+    </div>
+  </div>
+</code-wrapper>
