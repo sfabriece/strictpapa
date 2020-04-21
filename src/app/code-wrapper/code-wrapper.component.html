@@ -1,10 +1,10 @@
 <div class="container">
-  <div>
+  <div *ngIf="code">
     <h5>Typescript:</h5>
     <pre><code [highlight]="code"></code></pre>
   </div>
 
-  <div>
+  <div *ngIf="html">
     <h5>Html:</h5>
     <pre><code [highlight]="html"></code></pre>
   </div>

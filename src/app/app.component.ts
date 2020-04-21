@@ -21,7 +21,6 @@ export class AppComponent {
   moreFlags = [
     'noUnusedLocals',
     'noUnusedParameters',
-    'noImplicitReturns',
     'noFallthroughCasesInSwitch',
   ];
 }
