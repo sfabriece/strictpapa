@@ -9,4 +9,6 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 export class CodeWrapperComponent {
   @Input() code: string;
   @Input() html: string;
+
+  showCorrect = false;
 }

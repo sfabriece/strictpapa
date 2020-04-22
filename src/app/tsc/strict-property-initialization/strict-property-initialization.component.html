@@ -1,16 +1,15 @@
 <h3>Strict Property Initialization</h3>
 
-<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+<code-wrapper [code]="code" [html]="html" (dblclick)="showResult = !showResult">
+  <div class="correct">
+    <h2>Sum: {{ sum }}</h2>
+  </div>
   <div *ngIf="showResult">
-    <div>
-      <h2>Sum: {{ sum }}</h2>
-    </div>
-
     <div class="alert">
-      <p>Cost (The time it takes to discover the error):</p>
-
-      <h3>Compile => Build => Run => Inspect</h3>
-      <h3>In production???</h3>
+      <img
+        src="https://user-images.githubusercontent.com/3108592/80026162-f8820500-84e1-11ea-9e58-1b397c03b64f.png"
+        alt=""
+      />
     </div>
   </div>
 </code-wrapper>

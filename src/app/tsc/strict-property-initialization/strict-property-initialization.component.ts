@@ -4,6 +4,7 @@ const code = `
 export class StrictPropertyInitializationComponent implements OnInit {
 
   defaultValue: number; // 0
+  initializedSomewhereElse!: number;
 
   sum = 0;
 
@@ -17,6 +18,9 @@ export class StrictPropertyInitializationComponent implements OnInit {
 }
 `;
 
+// There are certain scenarios where properties can be initialized indirectly(perhaps by a helper method or dependency injection library),
+// in which case you can use the new definite assignment assertion modifiers for your properties.
+
 @Component({
   selector: 'app-strict-property-initialization',
   templateUrl: './strict-property-initialization.component.html',
@@ -29,10 +33,7 @@ export class StrictPropertyInitializationComponent implements OnInit {
   showResult = false;
 
   defaultValue: number; // 0
-  // defaultValue!: number;
-
-  // There are certain scenarios where properties can be initialized indirectly(perhaps by a helper method or dependency injection library),
-  // in which case you can use the new definite assignment assertion modifiers for your properties.
+  initializedSomewhereElse!: number;
 
   sum = 0;
 

@@ -3,6 +3,10 @@ import { Component } from '@angular/core';
 const code = `
 export class StrictSafeNavigationTypesComponent {
   mySquare = { x: 0 };
+
+  print(value: string) {
+    return value;
+  }
 }
 `;
 
@@ -13,8 +17,12 @@ export class StrictSafeNavigationTypesComponent {
 })
 export class StrictSafeNavigationTypesComponent {
   code = code;
-  html = '<div>{{mySquare?.x}}</div>';
+  html = '<div>{{print(mySquare?.x)}}</div>';
   showResult = false;
 
   mySquare = { x: 0 };
+
+  print(value: string) {
+    return value;
+  }
 }

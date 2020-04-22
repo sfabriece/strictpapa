@@ -10,7 +10,29 @@ import {
 // https: // www.stephanboyer.com/post/132/what-are-covariance-and-contravariance
 
 const code = `
+const samePasswordValidator: ValidatorFn = (
+  form: FormControl
+): ValidationErrors | null => {
+  const oldPasswordControl = form.get('oldPassword');
+  const newPasswordControl = form.get('newPassword');
 
+  if (!oldPasswordControl || !newPasswordControl) {
+    throw new Error(
+      \`Can not find oldPassword or newPassword in the form: \${form.toString()}\`
+    );
+  }
+
+  const oldPassword = oldPasswordControl.value;
+  const newPassword = newPasswordControl.value;
+
+  if (oldPassword === newPassword) {
+    return {
+      passwordNotChanged: true,
+    };
+  }
+
+  return null;
+};
 `;
 
 // export declare interface ValidatorFn {
@@ -51,7 +73,6 @@ const samePasswordValidator: ValidatorFn = (
 })
 export class StrictFunctionTypesComponent {
   code = code;
-  html = '<h2>Sum: {{ sum }}</h2>';
   showResult = false;
 
   form = new FormGroup(

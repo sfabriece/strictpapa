@@ -8,7 +8,7 @@ export class NoImplicitAnyComponent implements OnInit {
   ngOnInit(): void {
     let right; // implicit any!!!
 
-    right = 'value';
+    right = '3';
     this.sum = this.add(1, right);
   }
 
@@ -34,7 +34,7 @@ export class NoImplicitAnyComponent implements OnInit {
   ngOnInit(): void {
     let right; // implicit any!!!
 
-    right = 'value';
+    right = '3';
     this.sum = this.add(1, right);
   }
 

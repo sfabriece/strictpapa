@@ -1,15 +1,16 @@
 <h3>Strict Bind Call Apply</h3>
 
-<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+<code-wrapper [code]="code" [html]="html" (dblclick)="showResult = !showResult">
+  <div class="correct">
+    <h2>Sum: {{ sum }}</h2>
+  </div>
+
   <div *ngIf="showResult">
-    <div>
-      <h2>Sum: {{ sum }}</h2>
-    </div>
-
     <div class="alert">
-      <p>Cost (The time it takes to discover the error):</p>
-
-      <h3>Compile => Build => Run => Inspect</h3>
+      <img
+        src="https://user-images.githubusercontent.com/3108592/80015583-43941c00-84d2-11ea-8716-59d58121a77d.png"
+        alt=""
+      />
     </div>
   </div>
 </code-wrapper>

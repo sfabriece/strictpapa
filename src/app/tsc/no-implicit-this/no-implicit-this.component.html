@@ -1,16 +1,16 @@
 <h3>No Implicit this</h3>
 
-<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+<code-wrapper [code]="code" [html]="html" (dblclick)="showResult = !showResult">
+  <div class="correct">
+    <h2>{{ getTitleFunc()() }}</h2>
+  </div>
+
   <div *ngIf="showResult">
-    <div>
-      <h2>{{ getTitleFunc()() }}</h2>
-    </div>
-
     <div class="alert">
-      <p>Cost (The time it takes to discover the error):</p>
-
-      <h3>Compile => Build => Run => Inspect</h3>
-      <h3>In production???</h3>
+      <img
+        src="https://user-images.githubusercontent.com/3108592/80015221-b224aa00-84d1-11ea-9173-d18ab2de9255.png"
+        alt=""
+      />
     </div>
   </div>
 </code-wrapper>

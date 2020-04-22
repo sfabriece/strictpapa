@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" (click)="showCorrect = !showCorrect">
   <div *ngIf="html">
     <h5>Html:</h5>
     <pre><code [highlight]="html"></code></pre>
@@ -14,6 +14,7 @@
   <!-- <h5>Output</h5> -->
 
   <div>
+    <ng-content select=".correct" *ngIf="showCorrect"></ng-content>
     <ng-content></ng-content>
   </div>
 </div>
