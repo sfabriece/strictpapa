@@ -10,6 +10,15 @@ import { StrictPropertyInitializationComponent } from './tsc/strict-property-ini
 import { NoUnusedLocalsComponent } from './tsc/no-unused-locals/no-unused-locals.component';
 import { NoUnusedParametersComponent } from './tsc/no-unused-parameters/no-unused-parameters.component';
 import { NoFallthroughCasesInSwitchComponent } from './tsc/no-fallthrough-cases-in-switch/no-fallthrough-cases-in-switch.component';
+import { StrictLiteralTypesComponent } from './ng/strict-literal-types/strict-literal-types.component';
+import { StrictContextGenericsComponent } from './ng/strict-context-generics/strict-context-generics.component';
+import { StrictDomEventTypesComponent } from './ng/strict-dom-event-types/strict-dom-event-types.component';
+import { StrictOutputEventTypesComponent } from './ng/strict-output-event-types/strict-output-event-types.component';
+import { StrictDomLocalRefTypesComponent } from './ng/strict-dom-local-ref-types/strict-dom-local-ref-types.component';
+import { StrictSafeNavigationTypesComponent } from './ng/strict-safe-navigation-types/strict-safe-navigation-types.component';
+import { StrictAttributeTypesComponent } from './ng/strict-attribute-types/strict-attribute-types.component';
+import { StrictNullInputTypesComponent } from './ng/strict-null-input-types/strict-null-input-types.component';
+import { StrictInputTypesComponent } from './ng/strict-input-types/strict-input-types.component';
 
 const routes: Routes = [
   {
@@ -51,6 +60,42 @@ const routes: Routes = [
   {
     path: 'noFallthroughCasesInSwitch',
     component: NoFallthroughCasesInSwitchComponent,
+  },
+  {
+    path: 'strictInputTypes',
+    component: StrictInputTypesComponent,
+  },
+  {
+    path: 'strictNullInputTypes',
+    component: StrictNullInputTypesComponent,
+  },
+  {
+    path: 'strictAttributeTypes',
+    component: StrictAttributeTypesComponent,
+  },
+  {
+    path: 'strictSafeNavigationTypes',
+    component: StrictSafeNavigationTypesComponent,
+  },
+  {
+    path: 'strictDomLocalRefTypes',
+    component: StrictDomLocalRefTypesComponent,
+  },
+  {
+    path: 'strictOutputEventTypes',
+    component: StrictOutputEventTypesComponent,
+  },
+  {
+    path: 'strictDomEventTypes',
+    component: StrictDomEventTypesComponent,
+  },
+  {
+    path: 'strictContextGenerics',
+    component: StrictContextGenericsComponent,
+  },
+  {
+    path: 'strictLiteralTypes',
+    component: StrictLiteralTypesComponent,
   },
 ];
 

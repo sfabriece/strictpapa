@@ -1,0 +1,8 @@
+<h3>Strict dom Event Types</h3>
+<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+  <div *ngIf="showResult">
+    <div>
+      <input type="text" #input (keyup)="changeValue($event)" />
+    </div>
+  </div>
+</code-wrapper>

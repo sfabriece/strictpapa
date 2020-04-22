@@ -1,17 +1,17 @@
 <div class="container">
-  <div *ngIf="code">
-    <h5>Typescript:</h5>
-    <pre><code [highlight]="code"></code></pre>
-  </div>
-
   <div *ngIf="html">
     <h5>Html:</h5>
     <pre><code [highlight]="html"></code></pre>
   </div>
+
+  <div *ngIf="code">
+    <h5>Typescript:</h5>
+    <pre><code [highlight]="code"></code></pre>
+  </div>
 </div>
 
 <div>
-  <h5>Output</h5>
+  <!-- <h5>Output</h5> -->
 
   <div>
     <ng-content></ng-content>

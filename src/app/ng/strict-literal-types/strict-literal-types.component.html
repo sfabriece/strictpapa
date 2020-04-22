@@ -1,0 +1,22 @@
+<p>strict-literal-types works!</p>
+
+<p>strict-dom-event-types works!</p>
+<h3>Strict dom Event Types</h3>
+<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+  <div *ngIf="showResult">
+    <div>
+      <p>{{ "" }}</p>
+      <p *ngIf="{ x: 0, y: 0 } as location">{{ location }}</p>
+      <p
+        *ngFor="
+          let location of [
+            { x: 0, y: 0 },
+            { x: 10, y: 13 }
+          ]
+        "
+      >
+        {{ location.z }}
+      </p>
+    </div>
+  </div>
+</code-wrapper>

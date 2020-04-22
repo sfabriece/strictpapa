@@ -23,4 +23,16 @@ export class AppComponent {
     'noUnusedParameters',
     'noFallthroughCasesInSwitch',
   ];
+
+  angularFlags = [
+    'strictInputTypes',
+    'strictNullInputTypes',
+    'strictAttributeTypes',
+    'strictSafeNavigationTypes',
+    'strictDomLocalRefTypes',
+    'strictOutputEventTypes',
+    'strictDomEventTypes',
+    'strictContextGenerics',
+    'strictLiteralTypes',
+  ];
 }

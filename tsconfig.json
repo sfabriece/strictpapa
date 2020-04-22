@@ -10,6 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "removeComments": true,
     "strict": false,
+    "strictNullChecks": false,
     "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
@@ -18,6 +19,15 @@
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "strictLiteralTypes": false,
+    "strictInputTypes": false,
+    "strictNullInputTypes": false,
+    "strictAttributeTypes": false,
+    "strictSafeNavigationTypes": false,
+    "strictDomLocalRefTypes": false,
+    "strictOutputEventTypes": false,
+    "strictDomEventTypes": false
+    // "strictContextGenerics": false,
   }
 }

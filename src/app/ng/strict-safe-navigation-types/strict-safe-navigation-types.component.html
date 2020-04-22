@@ -1,0 +1,11 @@
+<p>strict Safe Naviagtion Types</p>
+
+<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+  <div *ngIf="showResult">
+    <h3>
+      Whether the return type of safe navigation operations `mySquare?.x` will
+      be correctly inferred based on the type of mySquare. If disabled,
+      `mySquare?.x? will be of type any.
+    </h3>
+  </div>
+</code-wrapper>

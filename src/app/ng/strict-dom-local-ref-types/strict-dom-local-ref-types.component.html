@@ -1,0 +1,8 @@
+<h3>Strict dom Local Ref Types</h3>
+<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+  <div *ngIf="showResult">
+    <div>
+      <input type="text" #input (keyup.enter)="changeValue(input)" />
+    </div>
+  </div>
+</code-wrapper>

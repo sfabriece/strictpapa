@@ -1,0 +1,9 @@
+<h3>Strict Null Input Types</h3>
+
+<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+  <div *ngIf="showResult">
+    <div>
+      <app-child [square]="mySquare"></app-child>
+    </div>
+  </div>
+</code-wrapper>

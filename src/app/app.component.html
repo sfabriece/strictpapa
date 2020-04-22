@@ -149,9 +149,9 @@
         </ol>
       </div>
     </mat-tab>
-    <mat-tab label="Typescript Additional Checks">
+    <!-- <mat-tab label="Typescript Additional Checks">
       <div>
-        <h3><pre>Additional Checks</pre></h3>
+        <h3><pre>Additional checks</pre></h3>
       </div>
 
       <div>
@@ -163,8 +163,22 @@
           </li>
         </ol>
       </div>
+    </mat-tab> -->
+    <mat-tab label="Angular">
+      <div>
+        <h3><pre>"strictTemplates": true</pre></h3>
+      </div>
+
+      <div>
+        <ol>
+          <li *ngFor="let flag of angularFlags">
+            <a class="flag" [routerLink]="flag" routerLinkActive="active">{{
+              flag
+            }}</a>
+          </li>
+        </ol>
+      </div>
     </mat-tab>
-    <mat-tab label="Angular"> Content 2 </mat-tab>
   </mat-tab-group>
   <router-outlet></router-outlet>
 
