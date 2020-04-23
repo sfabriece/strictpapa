@@ -35,4 +35,19 @@ export class AppComponent {
     // 'strictContextGenerics',
     'strictLiteralTypes',
   ];
+
+  intro = `
+  {
+    "compilerOptions": {
+      ...,
+      "strict": true,
+      ...
+    },
+    "angularCompilerOptions": {
+      "fullTemplateTypeCheck": true,
+      "strictInjectionParameters": true,
+      "strictTemplates": true
+    }
+  }
+  `;
 }

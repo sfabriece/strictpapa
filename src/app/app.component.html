@@ -134,11 +134,14 @@
 
 <div class="content" role="main">
   <mat-tab-group>
-    <mat-tab label="Typescript Strict">
+    <mat-tab label="Tsconfig">
       <div>
-        <h3><pre>"strict": true</pre></h3>
+        <h2>
+          <pre>{{ intro }}</pre>
+        </h2>
       </div>
-
+    </mat-tab>
+    <mat-tab label="Typescript">
       <div>
         <ol>
           <li *ngFor="let flag of strictFlags">
@@ -149,26 +152,7 @@
         </ol>
       </div>
     </mat-tab>
-    <!-- <mat-tab label="Typescript Additional Checks">
-      <div>
-        <h3><pre>Additional checks</pre></h3>
-      </div>
-
-      <div>
-        <ol>
-          <li *ngFor="let flag of moreFlags">
-            <a class="flag" [routerLink]="flag" routerLinkActive="active">{{
-              flag
-            }}</a>
-          </li>
-        </ol>
-      </div>
-    </mat-tab> -->
     <mat-tab label="Angular">
-      <div>
-        <h3><pre>"strictTemplates": true</pre></h3>
-      </div>
-
       <div>
         <ol>
           <li *ngFor="let flag of angularFlags">
