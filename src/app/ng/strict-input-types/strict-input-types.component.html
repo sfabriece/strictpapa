@@ -1,9 +1,16 @@
 <h3>Strict Input Types</h3>
 
-<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+<code-wrapper [code]="code" [html]="html" (dblclick)="showResult = !showResult">
   <div *ngIf="showResult">
     <div>
       <app-child [square]="{ x: 0 }"></app-child>
+    </div>
+
+    <div>
+      <img
+        src="https://user-images.githubusercontent.com/3108592/80041911-f88ffe00-84fd-11ea-9ca1-13d7a4cefffb.png"
+        alt=""
+      />
     </div>
   </div>
 </code-wrapper>

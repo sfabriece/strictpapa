@@ -1,12 +1,19 @@
 <h3>Strict Output Event Types</h3>
 
-<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+<code-wrapper [code]="code" [html]="html" (dblclick)="showResult = !showResult">
   <div *ngIf="showResult">
     <div>
       <app-child
         square="{ x: 0, y: 0 }"
         (move)="moveSquare($event)"
       ></app-child>
+    </div>
+
+    <div>
+      <img
+        src="https://user-images.githubusercontent.com/3108592/80041780-946d3a00-84fd-11ea-8e56-7efbf5bf3f21.png"
+        alt=""
+      />
     </div>
   </div>
 </code-wrapper>

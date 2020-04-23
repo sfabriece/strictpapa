@@ -7,9 +7,6 @@ import { StrictBindCallApplyComponent } from './tsc/strict-bind-call-apply/stric
 import { StrictNullChecksComponent } from './tsc/strict-null-checks/strict-null-checks.component';
 import { StrictFunctionTypesComponent } from './tsc/strict-function-types/strict-function-types.component';
 import { StrictPropertyInitializationComponent } from './tsc/strict-property-initialization/strict-property-initialization.component';
-import { NoUnusedLocalsComponent } from './tsc/no-unused-locals/no-unused-locals.component';
-import { NoUnusedParametersComponent } from './tsc/no-unused-parameters/no-unused-parameters.component';
-import { NoFallthroughCasesInSwitchComponent } from './tsc/no-fallthrough-cases-in-switch/no-fallthrough-cases-in-switch.component';
 import { StrictLiteralTypesComponent } from './ng/strict-literal-types/strict-literal-types.component';
 import { StrictContextGenericsComponent } from './ng/strict-context-generics/strict-context-generics.component';
 import { StrictDomEventTypesComponent } from './ng/strict-dom-event-types/strict-dom-event-types.component';
@@ -48,18 +45,6 @@ const routes: Routes = [
   {
     path: 'strictPropertyInitialization',
     component: StrictPropertyInitializationComponent,
-  },
-  {
-    path: 'noUnusedLocals',
-    component: NoUnusedLocalsComponent,
-  },
-  {
-    path: 'noUnusedParameters',
-    component: NoUnusedParametersComponent,
-  },
-  {
-    path: 'noFallthroughCasesInSwitch',
-    component: NoFallthroughCasesInSwitchComponent,
   },
   {
     path: 'strictInputTypes',

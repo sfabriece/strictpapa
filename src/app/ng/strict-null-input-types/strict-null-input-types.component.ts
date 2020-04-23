@@ -13,7 +13,7 @@ export class ChildComponent {
 
 @Component({})
 export class StrictNullInputTypesComponent {
-  mySquare: Square = null;
+  mySquare: Square | null = null;
 }
 
 `;
@@ -28,5 +28,5 @@ export class StrictNullInputTypesComponent {
   html = '<app-child [square]="mySquare"></app-child>';
   showResult = false;
 
-  mySquare: Square = null;
+  mySquare: Square | null = null;
 }

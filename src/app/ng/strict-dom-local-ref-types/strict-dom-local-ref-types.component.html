@@ -1,8 +1,15 @@
 <h3>Strict dom Local Ref Types</h3>
-<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+<code-wrapper [code]="code" [html]="html" (dblclick)="showResult = !showResult">
   <div *ngIf="showResult">
     <div>
       <input type="text" #input (keyup.enter)="changeValue(input)" />
+    </div>
+
+    <div>
+      <img
+        src="https://user-images.githubusercontent.com/3108592/80042012-37be4f00-84fe-11ea-928c-1fc0069d8420.png"
+        alt=""
+      />
     </div>
   </div>
 </code-wrapper>

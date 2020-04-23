@@ -14,9 +14,6 @@ import { StrictBindCallApplyComponent } from './tsc/strict-bind-call-apply/stric
 import { StrictNullChecksComponent } from './tsc/strict-null-checks/strict-null-checks.component';
 import { StrictFunctionTypesComponent } from './tsc/strict-function-types/strict-function-types.component';
 import { StrictPropertyInitializationComponent } from './tsc/strict-property-initialization/strict-property-initialization.component';
-import { NoUnusedLocalsComponent } from './tsc/no-unused-locals/no-unused-locals.component';
-import { NoUnusedParametersComponent } from './tsc/no-unused-parameters/no-unused-parameters.component';
-import { NoFallthroughCasesInSwitchComponent } from './tsc/no-fallthrough-cases-in-switch/no-fallthrough-cases-in-switch.component';
 import { StrictInputTypesComponent } from './ng/strict-input-types/strict-input-types.component';
 import { StrictNullInputTypesComponent } from './ng/strict-null-input-types/strict-null-input-types.component';
 import { StrictAttributeTypesComponent } from './ng/strict-attribute-types/strict-attribute-types.component';
@@ -50,9 +47,6 @@ export function getHighlightLanguages() {
     StrictNullChecksComponent,
     StrictFunctionTypesComponent,
     StrictPropertyInitializationComponent,
-    NoUnusedLocalsComponent,
-    NoUnusedParametersComponent,
-    NoFallthroughCasesInSwitchComponent,
     StrictInputTypesComponent,
     StrictNullInputTypesComponent,
     StrictAttributeTypesComponent,

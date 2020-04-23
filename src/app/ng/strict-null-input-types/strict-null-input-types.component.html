@@ -1,9 +1,16 @@
 <h3>Strict Null Input Types</h3>
 
-<code-wrapper [code]="code" [html]="html" (click)="showResult = !showResult">
+<code-wrapper [code]="code" [html]="html" (dblclick)="showResult = !showResult">
+  <div>
+    <app-child [square]="mySquare"></app-child>
+  </div>
+
   <div *ngIf="showResult">
     <div>
-      <app-child [square]="mySquare"></app-child>
+      <img
+        src="https://user-images.githubusercontent.com/3108592/80041572-1315a780-84fd-11ea-8bc1-fc0dd31cbe76.png"
+        alt=""
+      />
     </div>
   </div>
 </code-wrapper>

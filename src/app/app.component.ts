@@ -32,7 +32,7 @@ export class AppComponent {
     'strictDomLocalRefTypes',
     'strictOutputEventTypes',
     'strictDomEventTypes',
-    'strictContextGenerics',
+    // 'strictContextGenerics',
     'strictLiteralTypes',
   ];
 }
